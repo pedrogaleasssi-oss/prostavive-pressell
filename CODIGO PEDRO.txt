@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prostavive - Vitalidade e Saúde Masculina</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #004e92, #000428);
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      color: #00d4ff;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 2rem;
+      backdrop-filter: blur(8px);
+      animation: slideUp 1.5s ease;
+    }
+    h2 {
+      color: #00e6b8;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    li { margin-bottom: 0.4rem; }
+    .cta {
+      display: inline-block;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      margin-top: 2rem;
+    }
+    .cta:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #00aaff, #005bff);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    /* POPUP COOKIES */
+    #cookie-popup {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.85);
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      color: #fff;
+      width: 90%;
+      max-width: 400px;
+      z-index: 1000;
+    }
+    #cookie-popup a {
+      color: #00d4ff;
+      text-decoration: underline;
+    }
+    #cookie-popup button {
+      background: #00e6b8;
+      color: #000;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 0.6rem;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prostavive: Energia e Bem-Estar Masculino</h1>
+    <p>Um novo aliado natural para a saúde da próstata e da vitalidade</p>
+  </header>
+
+  <main>
+    <h2>Por que escolher o Prostavive?</h2>
+    <p>Com uma fórmula avançada e natural, o <strong>Prostavive</strong> ajuda a promover o equilíbrio hormonal, o conforto urinário e a vitalidade do homem moderno.</p>
+
+    <h2>Principais benefícios:</h2>
+    <ul>
+      <li>Suporte completo à saúde da próstata</li>
+      <li>Mais conforto e confiança no dia a dia</li>
+      <li>Fórmula 100% natural e segura</li>
+      <li>Resultados notados em poucas semanas</li>
+    </ul>
+
+    <div style="text-align:center;">
+      <a class="cta" href="https://prostavive.org?&shield=00d07iyafjy3-z5h-f3a6daw53" target="_blank">Aproveitar Agora</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Página de Pré-Venda Não Oficial do Prostavive</p>
+  </footer>
+
+  <div id="cookie-popup">
+    <p>Usamos cookies para oferecer a melhor experiência. <a href="https://prostavive.org?&shield=00d07iyafjy3-z5h-f3a6daw53" target="_blank">Saiba mais</a></p>
+    <button id="accept-cookies">Aceitar</button>
+  </div>
+
+  <script>
+    window.onload = function() {
+      if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookie-popup").style.display = "block";
+      }
+      document.getElementById("accept-cookies").onclick = function() {
+        localStorage.setItem("cookiesAccepted", "true");
+        document.getElementById("cookie-popup").style.display = "none";
+      };
+    };
+  </script>
+</body>
+</html>
